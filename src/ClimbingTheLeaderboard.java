@@ -63,10 +63,12 @@ public class ClimbingTheLeaderboard {
     for (int j=0;j<alice.length;j++)
     {
         int aliceScore = alice[j];
+        // If Alice's score less than the least score in the Score panel
         if (aliceScore < scores[scores.length - 1])
         {
             aliceRank[j] = rank[scores.length-1] +1;
         }
+        // If Alice's score is greater than the first score of the score panel
         else if (aliceScore > scores[0])
         {
             aliceRank[j] = 1;
